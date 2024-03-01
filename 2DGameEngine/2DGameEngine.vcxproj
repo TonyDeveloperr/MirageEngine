@@ -133,6 +133,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\AssetStore\AssetStore.h" />
+    <ClInclude Include="src\components\RigidBodyComponent.h" />
+    <ClInclude Include="src\Components\SpriteComponent.h" />
     <ClInclude Include="src\ECS\ECS.h" />
     <ClInclude Include="src\Logger\Logger.h" />
     <ClInclude Include="src\Game\Game.h" />
@@ -392,6 +395,7 @@
     <ClInclude Include="libs\sol\sol.hpp" />
     <ClInclude Include="src\Components\TransformComponent.h" />
     <ClInclude Include="src\Systems\MovementSystem.h" />
+    <ClInclude Include="src\Systems\RenderSystem.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="libs\glm\detail\func_common.inl" />
@@ -528,6 +532,9 @@
     <None Include="libs\glm\gtx\wrap.inl" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\AssetStore\AssetStore.cpp" />
+    <ClCompile Include="src\components\RigidBodyComponent.cpp" />
+    <ClCompile Include="src\Components\SpriteComponent.cpp" />
     <ClCompile Include="src\ECS\ECS.cpp" />
     <ClCompile Include="src\Logger\Logger.cpp" />
     <ClCompile Include="src\Game\Game.cpp" />
@@ -540,6 +547,7 @@
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Components\TransformComponent.cpp" />
     <ClCompile Include="src\Systems\MovementSystem.cpp" />
+    <ClCompile Include="src\Systems\RenderSystem.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
